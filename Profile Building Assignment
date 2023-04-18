@@ -1,0 +1,12 @@
+What is the difference between UI and UX?
+UI (User Interface) refers to the design of the visual elements and layout of a product, such as a website or application. UX (User Experience) refers to the overall experience a user has when interacting with a product. While UI is focused on the visual and interactive design, UX is focused on the entire experience, including ease of use, accessibility, and user satisfaction. In simpler terms, UI is how a product looks, while UX is how it feels.
+
+Who is a frontend developer? Explain the roles and responsibilities in your own words.
+A frontend developer is responsible for building and implementing the user-facing components of a website or application. This includes designing and developing the visual layout, implementing responsive design for different screen sizes, and creating interactive elements using HTML, CSS, and JavaScript. Frontend developers work closely with UI and UX designers to ensure that the final product meets the design specifications and is optimized for a great user experience. They may also work with backend developers to integrate frontend components with backend functionality.
+
+In summary, a frontend developer's primary role is to bring a website or application to life visually and functionally, making sure that the design and functionality work seamlessly together to create a great user experience.
+
+Who is a backend developer? Explain the roles and responsibilities in your own words.
+A backend developer is responsible for building and maintaining the server-side components of a website or application. This includes developing and maintaining the databases, APIs, and server infrastructure that enable frontend functionality. Backend developers work closely with frontend developers to ensure that the website or application has the necessary functionality and that data is stored and retrieved properly. They may also be responsible for security measures such as authentication and authorization, and for optimizing performance and scalability.
+
+In summary, a backend developer's primary role is to create and maintain the infrastructure and logic necessary to support the frontend of a website or application, ensuring that it works smoothly and securely.
