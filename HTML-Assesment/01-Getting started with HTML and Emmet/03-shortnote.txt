@@ -1,0 +1,15 @@
+Tags, Elements, and Attributes:
+Tags: Tags are the basic building blocks of HTML markup. They define the structure and meaning of content within a web page. Tags are enclosed in angle brackets (<>) and appear as pairs: an opening tag and a closing tag. For example, <p> is the opening tag for a paragraph, and </p> is the closing tag.
+
+Elements: Elements are made up of tags and the content placed between them. They represent specific types of content on a web page. For example, <p> is the opening tag for a paragraph element, and any text or other HTML content placed between the opening and closing tags becomes part of the paragraph element.
+
+Example:
+
+<p>This is a paragraph element.</p>
+
+
+
+Attributes: Attributes provide additional information or properties to HTML elements. They are specified within the opening tag of an element and consist of a name and a value. Attributes enhance the functionality or appearance of an element. For example, the href attribute in an anchor (<a>) tag specifies the URL that the link points to.
+Example:
+
+<a href="https://www.example.com">Visit Example.com</a>

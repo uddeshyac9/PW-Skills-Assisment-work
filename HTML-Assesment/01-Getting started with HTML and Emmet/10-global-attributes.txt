@@ -1,0 +1,14 @@
+10.Global attributes: Global attributes are HTML attributes that can be used with any HTML element. They provide common properties that can be applied to multiple elements, regardless of their specific purpose or function. These attributes enhance the behavior, presentation, and accessibility of the elements.
+Here are five examples of global attributes:
+
+class: The class attribute is used to assign one or more class names to an element. It is commonly used for styling and targeting elements with CSS or JavaScript.
+
+id: The id attribute uniquely identifies an element within the document. It is used to target specific elements for styling or scripting purposes.
+
+style: The style attribute allows inline CSS styling to be applied directly to an element. It provides a way to define specific styles for an element without the need for external CSS files.
+
+title: The title attribute provides additional information or a tooltip for an element. It is displayed when the user hovers over or interacts with the element.
+
+tabindex: The tabindex attribute specifies the tabbing order of elements when navigating through a webpage using the keyboard. It allows users to move focus to specific elements using the "Tab" key.
+
+These are just a few examples of global attributes, and there are more attributes available that can be applied to various HTML elements to enhance their functionality and behavior.

@@ -1,0 +1,12 @@
+4.Three important HTML tags and their explanations:
+<h1>: The <h1> tag is used to define the main heading of a webpage. It represents the highest level of heading and typically displays the largest and most prominent text on the page.
+Example:
+<h1>Welcome to my Website</h1>
+<img>: The <img> tag is used to insert an image into a webpage. It requires the src attribute, which specifies the URL or file path of the image to be displayed.
+Example:
+
+<img src="image.jpg" alt="Description of the image">
+<a>: The <a> tag is used to create hyperlinks or anchor links that allow users to navigate to different web pages or sections within the same page. It requires the href attribute, which specifies the URL or destination of the link.
+Example:
+
+<a href="https://www.example.com">Click here to visit Example.com</a>

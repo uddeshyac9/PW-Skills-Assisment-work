@@ -1,0 +1,12 @@
+
+09-Self-closing tags: Self-closing tags, also known as void elements, are HTML tags that do not require a closing tag because they don't have any content or nested elements. They represent elements that are standalone and don't need a closing tag to function properly. Instead, they are written with a trailing slash before the closing angle bracket.
+Example:
+
+html
+
+<img src="image.jpg" alt="Description" />
+<br />
+<input type="text" />
+In this example, <img>, <br>, and <input> are self-closing tags. They are used for inserting images, line breaks, and form input fields, respectively.
+
+Self-closing tags are valid in HTML5 and XHTML. It's important to note that in HTML5, the trailing slash is optional, as the self-closing tag is implicitly understood.

@@ -1,0 +1,49 @@
+Nesting operators in Emmet allow you to quickly and efficiently generate nested HTML or CSS structures. They provide a way to express the hierarchical relationship between elements or selectors in a concise manner. Here are the three main nesting operators in Emmet:
+
+Child (>): The child operator represents a direct child relationship between elements. It is used to indicate that one element is a direct child of another element.
+Example:
+
+css
+
+ul>li
+This expands to:
+
+html
+
+<ul>
+  <li></li>
+</ul>
+In this example, ul>li generates an unordered list (<ul>) containing a single list item (<li>).
+
+Sibling (+): The sibling operator represents elements that share the same parent and come immediately after each other. It is used to create elements that are siblings.
+Example:
+
+css
+
+h1+p
+This expands to:
+
+html
+
+<h1></h1>
+<p></p>
+In this example, h1+p generates a heading (<h1>) followed by a paragraph (<p>), both as siblings.
+
+Multiplication (*): The multiplication operator allows you to duplicate elements a specific number of times. It is useful for generating multiple elements with similar structures.
+Example:
+
+css
+
+ul>li*3
+This expands to:
+
+html
+
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+In this example, ul>li*3 generates an unordered list with three list items.
+
+By using these nesting operators, you can quickly generate complex nested HTML or CSS structures with minimal typing. They help improve the productivity and efficiency of writing code in Emmet.
