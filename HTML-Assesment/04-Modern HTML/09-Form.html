@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User-Form</title>
+</head>
+<body>
+    <!-- Use the Tab key on your keyboard to navigate through the elements on the webpage. Observe how the elements receive focus based on their tabindex values. -->
+    
+  <h1>User-Form</h1>
+  <form action="reset" method="POST">
+    <fieldset>
+    <table>
+        <tr>
+        <td><label for="firstname">First Name:</label></td>
+        <td><input tabindex="2" type="text" id="firstname" name="name" required></td></tr>
+  
+    <tr>
+        <td><label for="lastname">Last Name:</label></td>
+        <td><input tabindex="1" type="text" id="lastname" name="name" required></td>
+    </tr>
+    <tr>
+        <td><label for="email">Email:</label></td>
+        <td> <input tabindex="4" type="email" id="email" name="email" placeholder="pwskills@" required></td>
+    </tr>
+    
+   
+    <br>
+  </table>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <br>
+    <label for="Rating">Rating</label>
+        <input type="radio" id="1star" name="star" />
+        <label for="1star">1</label>
+        <input type="radio" id="2star" name="star" />
+        <label for="2star">2</label>
+        <input type="radio" id="3star" name="star" />
+        <label for="3star">3</label>
+        <input type="radio" id="4star" name="star" />
+        <label for="4star">4</label>
+        <input type="radio" id="5star" name="star" />
+        <label for="5star">5</label> 
+    <br>
+
+
+   
+    <input type="submit" tabindex="3" id="submit">
+    <input type="reset" />
+    
+  </fieldset>
+  </form>
+</body>
+</html>
