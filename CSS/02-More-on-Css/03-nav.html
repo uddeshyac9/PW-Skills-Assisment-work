@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-Bar</title>
+    <style>
+           .container {
+        background-color: #4fb5d7;
+        padding: 10px;
+        
+     }
+    
+     a:hover {  
+        color: #ac1212;
+        
+        
+     }
+     ul {
+        display: flex;
+        justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  border: 2px solid black;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+li:first-child {
+    border-style: dashed;
+    border-color: #ac1212;
+}
+li:nth-child(2) {
+    border-style: dotted;
+    border-color: #0000ff;
+}
+li:nth-child(3) {
+    border-style: double;
+    border-color: #d4217e;
+}
+li:nth-child(4) {
+    border-style: groove;
+    border-color: #ff8c00;
+}
+li:nth-child(5) {
+    border-style: hidden;
+    border-color: #ff0000;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">login</a></li>
+        
+      </ul>
+    </nav>
+    </div>
+</body>
+</html>
