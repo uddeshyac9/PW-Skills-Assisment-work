@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon-Game</title>
+    <style> 
+    .card-container {
+        height: 850px;
+        width: 80%;
+        border: 2px solid black;
+        position: relative;
+        text-align: center;
+        
+    }
+    .card {
+        height: 500px;
+        width: 400px;
+        border: 2px solid black;
+        border-radius: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         position: absolute;
+         margin-left: 50px;
+         margin-top: 50px;
+      
+
+    }
+   .pokemon-image {
+    width: 50%;
+  height: 50%;
+  object-fit: cover;
+  
+  /* transition: transform 0.3s ease, z-index 0.3s; */
+  
+   }
+   
+   #p1 {
+    background-color: yellow;
+    z-index: 3;
+    top: 250px;
+    left: 100px;
+   
+    
+
+    
+   }
+   #p2 {
+    background-color: #0e2a88;
+    z-index: 1;
+
+   }
+   #p3 {
+     background-color: #047e04;
+     z-index: 2;
+     top: 150px;
+     left: 50px;
+   }
+   .card:hover {
+    transition: 1s;
+  transform: scale(1.2) rotate(5deg);
+  translate: 50px;
+  /* z-index: 4; */
+}
+
+#p1:hover {
+    z-index: 5;
+    filter: blur(0px);
+}
+#p3:hover {
+    z-index: 5;
+}
+#p2:hover {
+    z-index: 5;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <h1>Hover To Unveil The Pokemon</h1>
+        <div class="card" id="p1">
+          <img src="./img/pokemon1.jpg" alt="Pokemon 1" class="pokemon-image" >
+        </div>
+        <div class="card" id="p2">
+          <img src="./img/pokemon-02.png" alt="Pokemon 2" class="pokemon-image" >
+        </div>
+        <div class="card" id="p3">
+          <img src="./img/pokemon-03.jpg" alt="Pokemon 3" class="pokemon-image" >
+        </div>
+      </div>
+      
+</body>
+</html>

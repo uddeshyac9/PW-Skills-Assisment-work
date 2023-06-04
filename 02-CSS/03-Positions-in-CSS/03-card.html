@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-Card</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    font-family: Montserrat;
+    
+    
+    box-sizing: border-box;
+    
+}
+        .container {
+         height: 100vh;
+         width: 550px;
+         border: 2px solid black;
+         overflow-y: hidden;
+        }
+        .img-container {
+            text-align: center;
+        }
+        .img-container img{
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            
+        }
+       .float-left {
+        float: left;
+       }
+       .float-right {
+        float: right;
+       }
+       .left {
+        list-style-type: none;
+        color: #351ea9;
+        font-weight: 500;
+        font-size: 1.2em;
+       }
+       .left > li {
+        margin-bottom: 10px;
+       }
+       .left > li:first-child {
+        margin-bottom: 30px;
+       }
+       .right {
+        list-style-type: none;
+       }
+       .right > li {
+        margin-bottom: 15px;
+
+       }
+    </style>
+</head>
+<body>
+ <div class="container">
+       <div class="img-container">
+        <img src="./img/HTML5_logo_and_wordmark.svg.png" alt="">
+    </div>
+    <div class="content">
+        
+        <h2>The offcial logo of the latest version, HTML5.</h2>
+        <section class="float-left">
+            <ul class="left">
+            <li>Filename extension</li>
+            <li>Internet media type</li>
+            <li>Type code</li>
+            <li>Uniform Type Identifier (UTI)</li>
+            <li>Devloped by</li>
+            <li>Initial release</li>
+            <li>Latest release</li>
+            <li>Type of Format</li>
+            <li>Container for</li>
+            <li>Contained by</li>
+            <li>Extended from</li>
+            <li>Extended to</li>
+            <li>Open format?</li>
+            <li>Website</li></ul>
+
+        </section>
+        <section class="float-right">
+            <ul class="right">
+            <li>.html <br>.htm</li>
+            <li>text/HTML</li>
+            <li>text/HTML</li>
+            <li>public.html</li>
+            <li>WHATWG</li>
+            <li>1993; 30years ago</li>
+            <li>HTML5</li>
+            <li>Document</li>
+            <li>HTML elements</li>
+            <li>Web browser</li>
+            <li>SGML</li>
+            <li>XHTML</li>
+            <li>Yes</li>
+            <li>html.spec.whatwg.org</li></ul>
+        </section>
+        
+        
+        
+    </div>
+ </div>
+    
+</body>
+</html>

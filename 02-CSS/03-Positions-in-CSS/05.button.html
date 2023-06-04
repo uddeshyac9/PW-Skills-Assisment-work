@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        .container {
+            height: 90vh;
+            width: 50vw;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buy-button {
+            position: relative;
+            background-color: rgb(193, 87, 87);
+            padding: 40px;
+            width: 50%;
+            font-weight: bold;
+            font-size: 2em;
+            border-radius: 10px;
+            
+            
+        } 
+        .buy-button:hover {
+            cursor: pointer;
+            color: #3232d7;
+        }
+        .discount-badge {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            padding: 20px;
+            font-size: 1.8rem;
+            width: 40%;
+            color: #fff;
+            background-color: #2e2c2c;
+            border-radius: 5px;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container"> 
+    <button class="buy-button">
+        Buy Now
+        <span class="discount-badge">15% Off</span>
+      </button>
+    </div>
+      
+    
+</body>
+</html>

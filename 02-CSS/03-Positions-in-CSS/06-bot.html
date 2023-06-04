@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-page</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+        body {
+  background-color: #fff;
+  color: #333;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #fff;
+  }
+}
+.container {
+    height: 100vh;
+    width: 100wh;
+    overflow: auto;
+}
+
+
+.floatleft {
+    float: left;
+    
+}
+.ul {
+    background-color: #323030;
+    list-style-type: none;
+    padding-left: 20px;
+    height: 130vh;
+    
+}
+.ul > li {
+    border-bottom: 2px solid #0c0c0c;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    
+
+} 
+.floatleft > img { 
+    width: 200px;
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+    background-color: #6e9aed;
+    width: 100%;
+    
+
+}
+.ul > li > a:hover {
+    color: #49771b;
+}
+.ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+   
+}
+.content {
+    text-align: center;
+}
+.content > h1 {
+   padding: 25px;
+   font-weight: bold;
+   font-size: 3em;
+   word-spacing: 5px;
+   color: #5e60d4;
+}
+.content > p {
+    font-size: 1.2em;
+    word-spacing: 2px;
+    margin-bottom: 50px;
+}
+.content> img {
+    /* float: right; */
+    margin-top: 20px;
+    height: 400px;
+    width: 600px;
+}
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chatbot-image {
+  width: 100px;
+  height: 100px;
+}
+.chatbot-image:hover {
+ cursor: pointer;
+ transform: rotate(360deg) ;
+ transition: 2s;
+}
+
+    </style>
+</head>
+<body> 
+<div class="container">
+    <sidebar class="side">
+        <div class="floatleft">
+            <img src="./img/PWSkills-main.png" alt="">
+            <ul class="ul">
+                
+                <!-- <li></li> -->
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">Courses</a> </li>
+                <li><a href="#">Pw Skills Lab</a> </li>
+                <li><a href="#">Job Portal</a> </li>
+                <li><a href="#">Experience Portal</a> </li>
+                <li><a href="#">Hall of Fame</a> </li>
+                <li><a href="#">Become an Affiliate</a> </li>
+                <li><a href="#">FAQs</a> </li>
+                <li><a href="#">Contact</a> </li>
+                <li><a href="#">Login</a> </li>
+            </ul>
+        </div>
+    </sidebar>
+    <div class="content">
+        <h1>PW SKILLS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, amet ut totam recusandae dolores tenetur illum consectetur facere, animi iusto architecto ipsa aspernatur aperiam nulla natus quaerat error fugiat quidem? Voluptatum voluptates dolor in asperiores accusantium explicabo repellendus perspiciatis dicta, officiis repudiandae soluta nam aperiam natus! Sint eveniet facilis sequi, non quibusdam perferendis eos ad ut minus dolore at suscipit tempore saepe provident consectetur voluptas. Dicta asperiores quasi officia facere.</p>
+        <img src="./img/pw.webp" alt="">
+        <h1>Our Mission</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, amet ut totam recusandae dolores tenetur illum consectetur facere, animi iusto architecto ipsa aspernatur aperiam nulla natus quaerat error fugiat quidem? Voluptatum voluptates dolor in asperiores accusantium explicabo repellendus perspiciatis dicta.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae molestias consequuntur porro vero neque dolorem facilis veritatis perspiciatis, magnam numquam blanditiis labore fugiat. Recusandae ipsum nulla odit id. Alias!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam porro enim eum officiis? Assumenda eligendi magni nesciunt similique veniam tenetur non fugiat incidunt rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eos consectetur veritatis voluptatibus laudantium facere non, incidunt et adipisci! Corrupti, perferendis sunt alias, cum dolores atque modi eveniet autem animi ipsum deserunt ullam! Tempora dolores quam debitis laudantium distinctio ratione culpa laborum enim obcaecati porro iste aspernatur, esse quis rerum. Aspernatur officia excepturi id. Commodi error delectus eum ad non praesentium, recusandae perspiciatis iusto fugiat libero, illum ipsam deleniti voluptates sit exercitationem sapiente provident repellendus cumque aut iste sunt impedit. Ratione sint odio, dignissimos consequatur soluta, dolore maxime, laudantium obcaecati nisi excepturi earum alias illum necessitatibus error sed ipsam placeat.
+        </p>
+
+    </div>
+    <div class="chatbot-container">
+        <img src="./img/friendly-chatbot.jpg" alt="Chatbot" class="chatbot-image">
+      </div>
+      
+
+    
+
+</div>
+</body>
+</html>
