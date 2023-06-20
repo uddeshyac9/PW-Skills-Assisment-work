@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #c5ead362;
+}
+.container {
+    width: 1300px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.hd {
+    text-align: center;
+  
+}
+.comunity {
+    color: #8b42cf;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 20px;
+}
+.sub-heading {
+    margin-bottom: 130px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card-1 {
+    width: 31%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    
+}
+.image {
+    height: 100%;
+  width: 100%;
+  padding: 20px;
+  object-fit: contain;
+}
+.text {
+    padding-left: 5%;
+    word-spacing: 2px;
+    padding-bottom: 2%;
+
+}
+.card-hd {
+    color: #8b42cf;
+    font-weight: 600;
+}
+.free {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hd">
+        <h1 class="comunity">Community Programs</h1>
+        <h4 class="sub-heading">Open to all pro-live classes on youtube for free </h4>
+    </header>
+    <section class="cards">
+        <div class="card-1">
+            <img src="./img/card-1.jpg"  class="image" alt="pw-skills">
+            <h3 class="text card-hd">Masterclass Object Oriented Programming Concepts Deep Dive</h3>
+            <p class="name text">Vishwa Mohan</p>
+            <p class="free text">FREE</p>
+         </div>
+         <div class="card-1">
+            <img src="./img/card-2.jpg"  class="image" alt="pw-skills">
+            <h3 class="text card-hd">Masterclass Understanding APIs in
+                Web Development with RoadMap</h3>
+            <p class="name text">Hitesh Choudhary</p>
+            <p class="free text">FREE</p>
+         </div>
+         <div class="card-1">
+            <img src="./img/card-3.jpg"  class="image" alt="pw-skills">
+            <h3 class="text card-hd"> Masterclass  the basics of web development using JavaScript</h3>
+            <p class="name text">Chirag Goel</p>
+            <p class="free text">FREE</p>
+         </div>
+    </section>
+  </div>
+    
+</body>
+</html>
