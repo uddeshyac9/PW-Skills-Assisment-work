@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Picker</title>
+</head>
+<style>
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #2f2f2f;
+}
+    .container {
+        max-width: 1200px;
+  margin: 0 auto;
+    }
+    
+
+    .color-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  column-gap: 50px;
+  row-gap: 10px;
+  align-content: center;
+   text-align: center;
+   align-items: center;
+  max-width: 300px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.color {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+.c1 {
+  
+  background-color: #8d3Daf;
+ 
+  
+}
+.c2 {
+  
+  background-color: #E07E24;
+}
+.c3 {
+  
+  background-color: #758283;
+}
+.c4 {
+  
+  background-color: #E03B8B;
+}
+.c5 {
+  
+  background-color: #FF6666;
+}
+.c6 {
+  
+  background-color: #03C6C7;
+}
+.c7 {
+  
+  background-color: #CAD5F2;
+}
+.c8 {
+  
+  background-color: #35BDD0;
+}
+
+
+.hover:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <h1>Feeling Fancy</h1>
+        <div class="color-grid">
+            <div class="color c1 hover">#8d3Daf</div>
+            <div class="color c2 hover">#E07E24</div>
+            <div class="color c3 hover">#758283</div>
+            <div class="color c4 hover">#E03B8B</div>
+            <div class="color c5 hover">#FF6666</div>
+            <div class="color c6 hover">#03C6C7</div>
+            <div class="color c7 hover">#CAD5F2</div>
+            <div class="color c8 hover">#35BDD0</div>
+        </div>
+       
+    </div>
+      
+</body>
+</html>

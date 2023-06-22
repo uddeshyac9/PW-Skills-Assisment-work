@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy-Resturant</title>
+    <style>
+         * {
+            box-sizing: border-box;
+         }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+}
+
+   /* navbar */
+ nav {
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    display: grid;
+    margin: auto;
+}
+ nav > img {
+    width: 50px;
+ }
+ .navlink > a {
+    text-decoration: none;
+    padding-right: 50px;
+    color: #000;
+    
+ }
+ .navlink > a:hover {
+    color: #12dada;
+ }
+   .nav-btn {
+    margin-left: 60%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    background-color: #0fdb6b;
+    color: #000;
+    font-weight: bold;
+    width: 150px;
+    
+    cursor: pointer;
+    border: none;
+    
+   }
+   .nav-btn:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+   /* section */
+ .hero-container {
+    max-width: 1200px;
+    /* height: 90vh; */
+    margin: auto;
+    display: grid;
+    grid-template-rows: 100px, 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+   
+    padding: 10px;
+    
+}
+.text-section {
+    padding: 0px 50px;
+}
+.text-section > h1 {
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+.text-section p {
+        color: #4c665d;
+        
+      }
+.btn {
+    padding: 10px;
+    width: 200px; 
+    color: #fff;
+    background-color: #000;
+    font-size: large;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.image-section {
+    background-color: yellow;
+    height: 100%;
+    
+}
+.image-section > img {
+    width: 70%;
+        height: 100%;
+}
+    /* section-03 */
+    .section-03 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        background-color: #2B1E16;
+        /* justify-content: center; */
+        margin: auto;
+        
+    }
+    .sub-section {
+    /* margin: 10px 50px; */
+    text-align: center;
+}
+    .sub-section img {
+    width: 150px;
+}
+  .hd-03 {
+    color: #fff;
+  }
+  .sub-section p {
+   color: #8c6e54;
+  }
+  .sub-section-03-heading {
+        margin-top: 60px;
+      }
+      /* section-04 */
+      .section-04 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 60px;
+        padding: 30px 0px;
+      }
+     
+      .section-04 .sub-section img {
+    text-align: center;
+    width: 100%;
+    height: 280px;
+  border-radius: 10% 10% 0 0; /* top left and top right corners have a border radius of 10px */
+    
+}
+.section-04 .text-section {
+        position: relative;
+        background-color: #fff;
+        margin-top: 0px;
+        top: -50px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 0px 0px 25px 25px;
+      }
+.text-section > h2 { 
+  margin: 0px;
+    padding: 5px 0px;
+    font-size: 30px;
+
+}
+
+
+.section-04 .sub-section p {
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="header">
+        <img
+          src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png"
+          alt="Logo"
+        />
+        <div class="navlink">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <button class="nav-btn">Login</button>
+      </nav>
+      <div class="hero-container">
+      
+        <section class="text-section">
+          <h1>Healthy Food</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            eligendi aut, at mollitia, rem voluptate illo minus sit iusto suscipit
+            ipsa voluptas velit nemo, hic excepturi? Qui accusantium accusamus ea!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            eligendi aut, at mollitia, rem voluptate illo minus sit iusto suscipit
+            ipsa voluptas velit nemo, hic excepturi? Qui accusantium accusamus ea!
+          </p>
+          <button class="btn">Read More</button>
+        </section>
+        <section class="image-section">
+          <img
+            src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY="
+            alt="Healthy Food"
+          />
+        </section>
+    </div>
+    <section class="section-03">
+        <div class="sub-section">
+          <img
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+            alt="Sub Section1"
+          />
+          <h1 class="hd-03">No Minimum Order</h1>
+          <p>
+            Order in for yourself or for the group, with no restrictions on order
+            value
+          </p>
+        </div>
+        <div class="sub-section">
+          <img
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+            alt="Sub Section2"
+          />
+          <h1 class="hd-03">Live Order Tracking</h1>
+          <p>
+            Know where your order is at all times, from the restaurant to your
+            doorstep
+          </p>
+        </div>
+        <div class="sub-section">
+          <img class="image3"
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+            alt="Sub Section3"
+          />
+          <h1 class="sub-section-03-heading hd-03">Lightning-Fast Delivery</h1>
+          <p>
+            Experience Swiggy's superfast delivery for food delivered fresh & on
+            time
+          </p>
+        </div>
+      </section>
+      <section class="section-04">
+        <div class="sub-section">
+          <img
+            src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+            alt="SubImage 01"
+          />
+          <div class="text-section">
+            <h2>Order Online</h2>
+            <p>Stay Home and order to your Door Step.</p>
+          </div>
+        </div>
+        <div class="sub-section">
+          <img
+            src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+            alt="SubImage 01"
+          />
+          <div class="text-section">
+            <h2>On-site Dining</h2>
+            <p>View the city's favourite dining venues.</p>
+          </div>
+        </div>
+        <div class="sub-section">
+          <img
+            src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+            alt="SubImage 01"
+          />
+          <div class="text-section">
+            <h2>Nightlife & Clubs</h2>
+            <p>Explore the city's top nightlife outlets & Book tables.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+</body>
+</html>
