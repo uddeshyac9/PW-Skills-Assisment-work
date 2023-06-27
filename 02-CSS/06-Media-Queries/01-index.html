@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Card</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .hd {
+    width: 100%;
+    max-height: 50px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    /* margin-top: 10px; */
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .icon {
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+   
+  }
+  .icon > img {
+    width: 60px;
+    
+    border-radius: 5px;
+  }
+ 
+  
+    .dropdown-menu ul {
+    list-style-type: none;
+    
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .btn {
+    margin-right: 10px;
+    padding: 10px 0px;
+    border-radius: 5px;
+   
+    color: #fff;
+    background: #1893f7;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+  }
+  .dropdown {
+    margin-left: 100px;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    transition: all 0.8s;
+  }
+  .hamburger-icon {
+    width: 100%;
+    display: none;
+  }
+  .dropdown-toggle {
+  visibility: hidden;
+    
+    
+    width: 25px;
+  }
+  .dropdown-menu > ul{
+    display: flex;
+    gap: 30px;
+    color: #2f2f2f;
+    align-items: start;
+    margin-bottom: 30px;
+    
+  }
+  .dropdown-menu > ul > li{ 
+    cursor: pointer;
+  }
+  .dropdown-menu li:hover {
+  color: #1893f7;
+
+}
+  @media screen and (max-width: 998px) {
+  
+    .icon {
+      margin-left: 10px;
+    }
+   
+    .hd {
+      justify-content: space-between;
+    }
+    .icon > img {
+    width: 50px;
+    
+  }
+    
+    .dropdown {
+  position: relative;
+  /* display: inline-block; */
+}
+.dropdown-menu > ul{
+    display: flex;
+    flex-direction: column;
+    
+    /* cursor: pointer; */
+    align-items: center;
+  }
+
+
+.dropdown-toggle {
+  /* padding: 10px; */
+  background-color: lightblue;
+  margin-left: 150px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  visibility: visible;
+ 
+}
+
+.dropdown-menu {
+  /* display: none; */
+  visibility: hidden;
+  position: absolute;
+  top: 90%;
+  right: -75px;
+  min-width: 100%;
+  max-height: 50%;
+   margin-left: 10px;
+   background-color: #fff;
+   
+} 
+  
+.btn {
+  margin-right: 20px;
+  width: 80px;
+  font-weight: 600;
+}
+
+
+.dropdown-menu ul {
+    
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+   
+    
+ padding: 10px;
+}
+
+
+.dropdown-toggle:focus + .dropdown-menu,
+.dropdown-menu:active {
+   /* display: block; */
+   visibility: visible;
+  
+} }
+.hamburger-icon {
+  display: block;
+}
+
+      </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hd">
+            
+              <div class="icon">
+                <img src="./Img/logo_black.svg" alt="" class="logo">
+              </div>
+              
+            
+            
+          
+             <div class="dropdown">
+                <button class="dropdown-toggle">
+                  <img src="./Img/ham-icon.jpeg" alt="" class="hamburger-icon">
+                </button>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li> Home </li>    
+                   <li>Blog</li>
+                    <li> About</li>
+                    <li>Contact</a></li>
+                    
+                  </ul>
+                 </div>
+              </div>
+             
+         
+           
+            <div class="login-btn">
+              <button class="btn">Apply Now</button>
+          </div>
+          </header>
+        </div>
+            
+</body>
+</html>

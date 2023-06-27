@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-Images</title>
+    <style>
+       .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            gap: 20px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 20px;
+        }
+      .image {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        
+      }
+      @media screen and (max-width: 768px) {
+        .photo-gallery {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 250px);
+        }
+      }
+    </style>
+</head>
+<body>
+      <h1>Random-Images</h1>
+    <div class="photo-gallery">
+        <div class="photo-1">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+            alt="image-01" class="image"
+          />
+        </div>
+        <div class="photo-2">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+            alt="image-02"class="image"
+          />
+        </div>
+        <div class="photo-3">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+            alt="image-03" class="image"
+          />
+        </div>
+        <div class="photo-4">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+            alt="image-04" class="image"
+          />
+        </div>
+        <div class="photo-5">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+            alt="img-5" class="image"
+          />
+        </div>
+        <div class="photo-6">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+            alt="image-6" class="image"
+          />
+        </div>
+      </div>
+    
+    
+</body>
+</html>

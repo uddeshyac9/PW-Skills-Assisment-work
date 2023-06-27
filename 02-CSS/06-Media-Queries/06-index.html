@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+        width: 100vw;
+        margin: 0 auto;
+        position: relative;
+        height: 100vh;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        /* 
+         */
+      background-color: #2f2f2f;
+      padding: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      color: #fff;
+    }
+
+    .footer-logo {
+      font-weight: bold;
+      font-size: 20px;
+      
+      
+    }
+    .ft-para {
+        font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    
+    width: 400px;
+    }
+    
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+ 
+
+    .footer-links > a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .footer-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+      width: 228px;
+      margin-bottom: 5px;
+    }
+
+    .footer-button {
+      padding: 10px;
+      width: 250px;
+      background-color: #1893f7;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 868px) {
+      .footer {
+        height: 120%;
+        width: 100%;
+     
+        text-align: center;
+        /* margin-top: 200px; */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .footer-logo {
+      
+        margin-top: 150px;
+      }
+      
+
+      .footer-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+  <footer class="footer">
+    <div class="footer-logo">
+         <h2 class="footer-hd">One Card</h2>
+    <p class="ft-para">India's best metal credit card. Built with full-stack tech. 
+        Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+    </div>
+    <nav class="footer-links">
+        <h2 class="footer-hd">Navigation</h2>
+      
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Offers</a>
+      
+    </nav>
+    <nav class="footer-links">
+        <h2 class="footer-hd">Support</h2>
+        
+      <a href="#">F.A.Q.</a>
+      <a href="#">Cookies Policy</a>
+      <a href="#">Terms Of Service</a>
+      <a href="#">Support</a>
+    
+    </nav>
+    <div class="letter">
+        <h2 class="footer-hd">Newsletter</h2>
+      <form>
+        <input type="email" class="footer-input" placeholder="Your email id here">
+        <br>
+        <button type="submit" class="footer-button">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>

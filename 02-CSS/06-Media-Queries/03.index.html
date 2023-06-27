@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Card</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+  }
+  
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+   
+  position: relative; /* Set position to relative for proper positioning of the header */
+ 
+}
+ /* header-start */
+.hd {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
+  display: flex;
+  position:  fixed;
+  top: 0;
+  right: 0;
+  
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 5px;
+  
+  align-items: center;
+  border-radius: 5px;
+  z-index: 999; /* Set a higher z-index to ensure the header appears above other elements */
+}
+
+  .icon {
+    margin-left: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+   
+  }
+  .icon > img {
+    width: 60px;
+    
+    border-radius: 5px;
+  }
+ 
+  
+    .dropdown-menu ul {
+    list-style-type: none;
+    
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .btn {
+    margin-right: 100px;
+    padding: 10px 0px;
+    border-radius: 5px;
+   
+    color: #fff;
+    background: #1893f7;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+  }
+  .dropdown {
+    margin-left: 100px;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    transition: all 0.8s;
+  }
+  .hamburger-icon {
+    width: 100%;
+    display: none;
+  }
+  .dropdown-toggle {
+  visibility: hidden;
+    
+    
+    width: 25px;
+  }
+  .dropdown-menu > ul{
+    display: flex;
+    gap: 30px;
+    color: #2f2f2f;
+    align-items: start;
+    margin-bottom: 30px;
+    
+  }
+  .dropdown-menu > ul > li{ 
+    cursor: pointer;
+  }
+  .dropdown-menu li:hover {
+  color: #1893f7;
+
+}
+/* section start  */
+
+ .sec {
+    display: flex;
+    width: 100%;
+    /* margin-top: -100px; */
+    gap: 50px;
+    
+ }   
+ .left-sec {
+width: 40%;
+margin-top: 50px;
+padding: 50px;
+ }
+ .left-sec > p {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 25px;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    width: 400px;
+ }
+ 
+ .banking-img {
+    width: 400px;
+    margin-bottom: 20px;
+ }
+  .sec-heading {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  }
+ .One-text {
+    color: #1893f7;
+    font-size: 2em;
+ }
+ .sec-sub-heading {
+    color: #1893f7;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+
+ }
+ .sec-button {
+
+ }
+ .right-sec {
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 50px;
+ }
+ .right-sec > video {
+    width: 500px;
+    height: 500px;
+    
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    
+ }
+
+  video::-webkit-media-controls {
+  display: none;
+}
+
+ /* section-2 */
+ .sec-2 {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    background-color: #1b1a1a;
+  }
+  .sec-2-heading {
+    color: #088af4;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .sec-para {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  @media screen and (max-width: 998px) {
+  
+    .icon {
+      margin-left: 40px;
+    }
+   
+    .hd {
+      justify-content: space-around;
+    }
+    .icon > img {
+    width: 50px;
+    
+  }
+    
+    .dropdown {
+  position: relative;
+  /* display: inline-block; */
+}
+.dropdown-menu > ul{
+    display: flex;
+    flex-direction: column;
+    
+    /* cursor: pointer; */
+    align-items: center;
+  }
+
+
+.dropdown-toggle {
+  /* padding: 10px; */
+  background-color: lightblue;
+  margin-left: 150px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  visibility: visible;
+  
+ 
+}
+
+.dropdown-menu {
+  /* display: none; */
+  visibility: hidden;
+  position: absolute;
+  top: 110%;
+  right: -75px;
+  min-width: 100%;
+  
+
+  height: 100%;
+   margin-left: 10px;
+   
+   z-index: 5;
+   
+} 
+  
+.btn {
+  margin-right: 20px;
+  width: 80px;
+  font-weight: 600;
+}
+
+
+.dropdown-menu ul {
+    width: 400px;
+    height: 400px;
+    background-color: #fefefe;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+   
+    
+ padding: 10px;
+}
+
+
+.dropdown-toggle:focus + .dropdown-menu,
+.dropdown-menu:active {
+   /* display: block; */
+   visibility: visible;
+  
+} 
+.hamburger-icon {
+  display: block;
+}
+/* section media-queries */
+.sec {
+    display: flex;
+    
+    width: 90%;
+    height: 800px;
+    /* margin-top: -100px; */
+    gap: 20px;
+    padding: 100px;
+    
+ }   
+ .banking-img {
+    width: 300px;
+    margin-bottom: 20px;
+ }
+ .right-sec > video {
+    width: 400px;
+    height: 400px;
+    
+    
+ }
+ .sec-heading {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  }
+   .sec-sub-heading {
+   
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: nowrap;
+
+ }
+ .One-text {
+    color: #1893f7;
+    font-size: 1.5em;
+ }
+ .left-sec > p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  width: 300px;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
+ }
+
+}
+ 
+
+@media screen and (max-width: 829px) {
+  .sec {
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+    /* width: 80%;
+    height: 800px;
+    
+    gap: 20px;
+    padding: 100px; */
+    
+ }   
+ .left-sec {
+width: 100%;
+margin-top: 0px;
+padding: 10px;
+margin-left: 100px;
+ }
+ .left-sec > p {
+    font-size: 18px;
+    
+    line-height: 25px;
+  
+    margin-bottom: 20px;
+    width: 300px;
+ }
+ 
+ .banking-img {
+    width: 300px;
+    margin-bottom: 20px;
+ }
+  .sec-heading {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  }
+ .One-text {
+    color: #1893f7;
+    font-size: 2em;
+ }
+ .sec-sub-heading {
+   
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+
+ }
+ 
+ .right-sec {
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 50px;
+ }
+ .right-sec > video {
+    width: 400px;
+    height: 400px;
+    
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    
+ }
+ .sec-2 {
+    margin-top: 300px; 
+    background-color: #fff;
+ }
+ .sec-2-heading {
+    color: #088af4;
+    
+  }
+  .sec-para {
+    color: #151515;
+    
+  }
+}
+@media screen and (max-width: 599px) {
+  .left-sec {
+
+margin-top: 0px;
+padding: 0px;
+margin-left: 0px;
+ }
+ .right-sec {
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 50px;
+ }
+ .right-sec > video {
+    width: 300px;
+    height: 400px;
+    
+ }
+}
+
+      </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hd">
+            
+              <div class="icon">
+                <img src="./Img/logo_black.svg" alt="" class="logo">
+              </div>
+             <div class="dropdown">
+                <button class="dropdown-toggle">
+                  <img src="./Img/ham-icon.jpeg" alt="" class="hamburger-icon">
+                </button>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li> Home </li>    
+                   <li>Blog</li>
+                    <li> About</li>
+                    <li>Contact</a></li>
+                    
+                  </ul>
+                 </div>
+              </div>
+             
+         
+           
+            <div class="login-btn">
+              <button class="btn">Apply Now</button>
+          </div>
+          </header>
+          <section class="sec">
+            <div class="left-sec">
+                <h1 class="sec-heading">Say Hi to <br>
+                   <span class="One-text">OneCard</span> </h1>
+                   <h2 class="sec-sub-heading">Co-branded Card Issuers :</h2>
+                   <img src="./Img/Banking_partners_24thJan_dark__.png" class="banking-img" alt="">
+                   <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, 
+                    transparency, and giving back control to the user.</p>
+                   <button class="sec-button btn">Apply Now</button>
+            </div>
+            <div class="right-sec">
+                <video src="./Img/say_hi_2x_d3_.mp4" controls autoplay muted loop></video>
+            </div>
+          </sec>
+          
+        </div>
+        <section class="sec-2">
+            <div class="sec-2-content">
+                <h1 class="sec-2-heading">No Hidden Fees Ever</h1>
+                <p class="sec-para">No Joining Fees. </p>
+                   <p class="sec-para"> No Annual Fees. </p>
+                   <p class="sec-para">No Rewards Redemption Fees.</p> 
+            </div>
+          </section>
+            
+</body>
+</html>
