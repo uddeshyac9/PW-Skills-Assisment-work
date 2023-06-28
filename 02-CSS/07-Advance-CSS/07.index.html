@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+      .container{ 
+         border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        padding: 15px 40px;
+        background: linear-gradient(
+          90deg,
+          rgba(69, 103, 221, 1) 11%,
+          rgba(60, 51, 194, 1) 100%,
+          rgba(233, 177, 140, 1) 100%
+        );
+        border-radius: 10px;
+            font-family: Arial, sans-serif;
+            border: none;
+            cursor: pointer;
+            animation: btn 1s ease-in 0s infinite alternate;
+      }
+      button > a {
+        text-decoration: none;
+        color: #fff;
+        
+      }
+      @keyframes btn {
+       100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        
+
+     }
+     50% {
+        transform:  translateY(0%);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
+     }
+
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button>
+            <a href="https://pwskills.com">Click Me To Visit PW Skills.</a>
+          </button>
+    </div>
+    
+</body>
+</html>

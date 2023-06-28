@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Filter</title>
+    <style> 
+    .img-container {
+       border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        height: 500px;
+        width: 800px;
+     
+        
+    }
+    img:hover {
+        filter: grayscale(1);
+        transition: all 0.5s;
+    }
+    </style>
+</head>
+<body>
+    <div class="img-container">
+       <h1>Hover TO Have a Greyscale Look.</h1> 
+       <img
+       src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/01/22185942/Bill-Gates.jpg"
+       alt="Bill Gates"
+     />
+    </div>
+    
+</body>
+</html>
