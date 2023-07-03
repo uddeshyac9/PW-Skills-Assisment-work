@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .Login-Page-Container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+           height: 100vh;
+           width: 100vw;
+           /* text-align: center; */
+           background-color: #2f2f2f;
+        }
+        .Sign-Up {
+            margin-top: 25px;
+        }
+        .login-page {
+            background-color: #fff;
+            height: 600px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            
+        }
+        .formField {
+            width: 400px;
+          
+            /* border: none; */
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+        }
+        .btn {
+            
+   border-radius: 10px;
+   width: 400px; 
+   background-color: #2f2f2f;
+   color: #fff;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 500;
+   z-index: 1;   
+   padding: 0.8rem 2rem;
+   font-size: 18px;
+   border: none;
+   cursor: pointer;
+   
+   
+  
+  }
+  .label {
+   
+  }
+        
+    </style>
+</head>
+<body>
+    <div class="Login-Page-Container">
+    <div class="login-page">
+         <h1 class="Sign-Up">Sign Up</h1>
+        <form action="#">
+          <div class="formFieldContainer">
+            <label for="name" class="label">Name:</label>
+           
+            <br>
+            <input class="formField" type="text"  />
+          </div>
+          <div class="formFieldContainer">
+            <label for="Batch" class="label">Batch:</label>
+            <br>
+            <select class="formField" id="Batch">
+              <option value="batch1">Sigma Batch</option>
+              <option value="batch2">Impact Batch</option>
+              <option value="batch3">Binary Batch</option>
+            </select>
+          </div>
+          
+          <div class="formFieldContainer">
+            <label for="age" class="label">Age:</label>
+            <br>
+            <input class="formField" type="text"  />
+          </div>
+          <div class="formFieldContainer">
+            <label for="email" class="label">Email:</label>
+            <br>
+            <input class="formField" type="email"  />
+          </div>
+          <div class="formFieldContainer">
+            <label for="password" class="label">Password:</label>
+            <br>
+            <input class="formField" type="password"  />
+          </div>
+          <div class="formBtn">
+            <button type="submit" class="btn" id="submit-btn">
+              Sign-Up
+            </button>
+          </div>
+        </form>
+       </div>
+      </div>
+    
+</body>
+</html>

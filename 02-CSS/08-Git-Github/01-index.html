@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .Login-Page-Container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           height: 100vh;
+           width: 100vw;
+           text-align: center;
+           background-color: #e3e0dd;
+        }
+        .login {
+            margin-top: 25px;
+        }
+        .login-page {
+            background-color: #fff;
+            height: 300px;
+            width: 400px;
+        }
+        form {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            
+        }
+        .formField {
+            width: 300px;
+          
+            border: none;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+        }
+        .btn {
+            
+   border-radius: 10px;
+   width: 300px; 
+   background-color: #4c87ca;
+   color: #fff;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 500;
+   z-index: 1;   
+   padding: 0.8rem 2rem;
+   font-size: 18px;
+   border: none;
+   cursor: pointer;
+   
+   
+  
+  }
+        
+    </style>
+</head>
+<body>
+    <div class="Login-Page-Container">
+    <div class="login-page">
+         <h1 class="login">Login</h1>
+        <form action="#">
+          <div class="formFieldContainer">
+            <input class="formField" type="text" placeholder="Username" />
+          </div>
+          <div class="formFieldContainer">
+            <input class="formField" type="password" placeholder="Password" />
+          </div>
+          <div class="formBtn">
+            <button type="submit" class="btn" id="submit-btn">
+              Submit
+            </button>
+          </div>
+        </form>
+       </div>
+      </div>
+    
+</body>
+</html>
