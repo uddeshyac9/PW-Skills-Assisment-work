@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Element</title>
+    <Style>
+     
+        h1 {display: inline; 
+        }
+
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Which is your favorite Programming Language:
+        </h1>
+        <select id="dropdown">
+            <!-- Dropdown items will be added here -->
+        </select>
+       
+    </div>
+    
+
+   
+   
+   <script>
+       const options = ['Javascript','C++','Java','Python'];
+       const dropdown = document.getElementById('dropdown');
+       options.forEach(optionText => {
+        const option = document.createElement('option');
+        option.textContent = optionText;
+        dropdown.appendChild(option);
+       });
+
+   </script>
+</body>
+</html>

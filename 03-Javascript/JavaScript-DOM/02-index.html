@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+.light-div {
+    width: 100%;
+    height: 200px;
+    border: black solid 2px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.dark-div {
+    width: 100%;
+    height: 200px;
+    border: black solid 2px;
+    text-align: center;
+
+}
+.light-mode {
+    background-color: rgb(216, 198, 198);
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this Boxes.</p>
+<div class="light-div">
+    <h3>This is a Light Mode</h3>
+    <button onclick="lightMode()">Toggle Light mode</button>
+</div>
+<div class="dark-div">
+    <h3>This is a Dark Mode</h3>
+    <button onclick="darkMode()">Toggle dark mode</button>
+</div>
+
+
+<script>
+    function lightMode() {
+   let element = document.querySelector(".light-div")
+   element.classList.toggle("light-mode");
+}
+function darkMode() {
+   let element = document.querySelector(".dark-div")
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>

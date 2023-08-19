@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CounterApp</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  <div class="h-screen w-screen flex flex-col justify-center items-center bg-[#344151] gap-10">
+    <div class="text-[#0398d4] font-medium text-[20px]"> Increament And Decreament</div>
+    <div class="flex bg-white text-[25px] rounded-sm text-[#344151] gap-14 px-5 p-3">
+        <!-- decreament btn -->
+        <button onclick="increament()" class="border-r-2 border-[#bfbfbf] pr-5">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <div id="num" class="font-bold">
+         0
+        </div>
+        <!-- Increament btn -->
+        <button onclick="decreament()" class="border-l-2 border-[#bfbfbf] pl-5">
+            <i class="fa-solid fa-minus"></i>
+        </button>
+    </div> 
+
+
+</div>
+   
+
+  
+    
+<script>
+    const countValue = document.getElementById('num');
+    const increament = () => {
+        // get the value from UI
+        let value = parseInt(countValue.innerText);
+         // Increase the value
+        value = value + 1;
+        // put value inside the UI
+        countValue.innerText = value; 
+    } 
+    const decreament = () => {
+        // get the value from UI
+        let value = parseInt(countValue.innerText);
+         // Increase the value
+        value = value - 1;
+        // alert the user 
+        if (value < 0) {
+            alert("Counter is going beyond 0. !!");
+
+        }
+        // put value inside the UI
+        countValue.innerText = value; 
+        
+    } 
+</script>
+
+    <script src="https://kit.fontawesome.com/57b3fb8133.js" crossorigin="anonymous"></script>
+</body> 
+</html>

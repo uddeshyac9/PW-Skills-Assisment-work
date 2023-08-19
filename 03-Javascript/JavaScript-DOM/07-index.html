@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List Filter</title>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search items...">
+    <ul id="itemList">
+        <li>JavaScript</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Web devlopment</li>
+        <li>Front End Devlopment</li>
+        <li>Full Stack Devlopment</li>
+        <li>Android Devlopment</li>
+        <li>Ios Devlopment</li>
+        <!-- Add more list items -->
+    </ul>
+    
+    <script>
+        // Your JavaScript code will go here
+        const searchInput = document.getElementById('searchInput');
+        const itemList = document.getElementById('itemList');
+        const listItems = itemList.getElementsByTagName('li');
+        // add event listner to search Input
+        searchInput.addEventListener('input', function() {
+            const inputText = searchInput.value.toLowerCase();
+            for (listItem of listItems) {
+             const itemText =  listItem.textContent.toLowerCase();
+             if (itemText.includes(inputText)) {
+                listItem.style.display = 'block';
+                
+             }  else {
+                listItem.style.display = 'none';
+             }
+            }
+
+        });
+
+    </script>
+</body>
+</html>

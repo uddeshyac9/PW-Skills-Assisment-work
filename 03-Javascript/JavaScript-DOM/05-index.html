@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-toggole</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+   <h1>Your Image is <span id="change">Visible.</span></h1>
+   <button id="btn">Toggle Image</button>
+   <br>
+   <br>
+   <img src="https://miro.medium.com/v2/resize:fit:800/0*ZEPJsASfB2z7hi_0"  
+ class="img" alt="">
+
+
+   <script>
+   const button =  document.getElementById('btn'); 
+   button.addEventListener('click', function (e) {
+    const image =  document.querySelector('.img');
+     const change =  document.getElementById('change');
+     
+
+     if (image.classList.contains('hidden')) {
+        image.classList.remove('hidden');
+        change.innerText = ('Visible');
+     } else {
+        image.classList.add('hidden');
+        change.innerText = ('Hidden');
+     }
+
+
+   })
+
+   </script>
+
+</body>
+</html>
