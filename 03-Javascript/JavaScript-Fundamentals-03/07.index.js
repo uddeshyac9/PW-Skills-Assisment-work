@@ -34,3 +34,4 @@ removeUser('bob@example.com');
 for (const [email, user] of userMap) {
     console.log(`Name: ${user.name}, Age: ${user.age}, Email: ${email}`);
 }
+//output: Name: Uddeshya, Age: 23, Email: Uddeshyac9@gmail.com

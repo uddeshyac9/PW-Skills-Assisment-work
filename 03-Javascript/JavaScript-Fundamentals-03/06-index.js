@@ -8,3 +8,5 @@ function reverseString(inputStr) {
 }
 
 console.log(reverseString("UDDESHYA"));
+
+// output: AYHSEDDU

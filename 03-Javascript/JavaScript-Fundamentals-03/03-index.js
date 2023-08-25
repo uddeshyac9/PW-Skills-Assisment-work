@@ -6,3 +6,4 @@ const student = {
 };
 const propertiesLength = Object.keys(student).length;
 console.log(propertiesLength);
+// output: 4

@@ -18,3 +18,5 @@ if (hasProperty(student, propertyName)) {
 } else {
     console.log(`The object does not have the property '${propertyName}'`);
 }
+
+// output: The object has the property 'course'

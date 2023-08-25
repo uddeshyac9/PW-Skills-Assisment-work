@@ -15,3 +15,7 @@ const car = {
 Object.keys(car).forEach(key => {
     console.log(`${key}: ${car[key]}`);
 });
+// Output :
+//  make: Toyota
+// model: Camry
+// year: 2022
